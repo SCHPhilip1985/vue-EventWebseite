@@ -1,0 +1,8 @@
+const mongoose = require("mongoose") 
+
+const eventschema = new mongoose.Schema({
+    values:mongoose.Schema.Types.Mixed
+}, {})
+
+const Eventschema = mongoose.model("Event", eventschema)
+module.exports = Eventschema
