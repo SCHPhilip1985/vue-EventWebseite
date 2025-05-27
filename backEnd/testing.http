@@ -1,0 +1,28 @@
+@url=http://localhost:9002
+
+GET {{url}}
+
+### POST 
+POST {{url}}
+Content-Type: application/json
+
+{
+    "values":{
+    "e-mail":"Mail", 
+    "name":"Schindler",
+    "vorname":"Philip",
+    "alter":"40"
+}
+}
+
+
+### GETENTRIES
+GET {{url}}/getentries
+
+###
+DELETE {{url}}
+Content-Type: application/json
+
+{
+"_id": "6835c54c9093a9ccd0bcccbf"
+}
